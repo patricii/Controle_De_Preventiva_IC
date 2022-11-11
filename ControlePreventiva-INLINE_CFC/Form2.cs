@@ -25,8 +25,8 @@ namespace ControlePreventiva_INLINE_CFC
             {
                 controlePreventivasICBindingSource.MovePrevious();
             }
-            catch {
-                MessageBox.Show("Não foi possivel conectar com o Banco de Dados!");
+            catch (Exception ex){
+                MessageBox.Show("Não foi possivel conectar com o Banco de Dados! : " + ex);
             }
         }
 
@@ -36,9 +36,9 @@ namespace ControlePreventiva_INLINE_CFC
             {
                 controlePreventivasICBindingSource.MoveNext();
             }
-            catch
+            catch (Exception ex)
             {
-                MessageBox.Show("Não foi possivel conectar com o Banco de Dados!");
+                MessageBox.Show("Não foi possivel conectar com o Banco de Dados! : " + ex);
             }
         }
 
@@ -48,9 +48,9 @@ namespace ControlePreventiva_INLINE_CFC
             {
                 controlePreventivasICBindingSource.RemoveCurrent();
             }
-            catch
+            catch (Exception ex)
             {
-                MessageBox.Show("Não foi possivel conectar com o Banco de Dados!");
+                MessageBox.Show("Não foi possivel conectar com o Banco de Dados! : " + ex);
             }
         }
 
@@ -60,9 +60,9 @@ namespace ControlePreventiva_INLINE_CFC
             {
                 controlePreventivasICBindingSource.AddNew();
             }
-            catch
+            catch (Exception ex)
             {
-                MessageBox.Show("Não foi possivel conectar com o Banco de Dados!");
+                MessageBox.Show("Não foi possivel conectar com o Banco de Dados! : " + ex);
             }
         }
 
@@ -74,9 +74,9 @@ namespace ControlePreventiva_INLINE_CFC
                 controlePreventivasICTableAdapter.Update(controlePreventiva_ICDataSet);
                 MessageBox.Show("Registro salvo com sucesso!!!");
             }
-            catch
+            catch (Exception ex)
             {
-                MessageBox.Show("Não foi possivel conectar com o Banco de Dados!");
+                MessageBox.Show("Não foi possivel conectar com o Banco de Dados! : " + ex);
             }
         }
 
@@ -106,17 +106,8 @@ namespace ControlePreventiva_INLINE_CFC
                         {
                             StringBuilder sb = new StringBuilder();
                             for (int i = 0; i <= fields; i++)
-                            {
-                                if (i != fields)
-                                {
-                                    separator = separator;
-                                }
-                                else
-                                {
-                                    separator = ",";
-                                }
+                            {                               
                                 sb.Append(dr[i].ToString() + separator);
-
                             }
                             sw.WriteLine(sb.ToString());
                         }
@@ -126,7 +117,7 @@ namespace ControlePreventiva_INLINE_CFC
             }
             catch(Exception ex) {
 
-                MessageBox.Show("Não foi possivel exportar os dados para o excel!!!!" + ex);
+                MessageBox.Show("Não foi possivel exportar os dados para o excel!!!! : " + ex);
             }
 
         }
