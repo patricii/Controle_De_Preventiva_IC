@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Data.OleDb;
+using System.IO;
+using System.Text;
 using System.Windows.Forms;
 
 namespace ControlePreventiva_INLINE_CFC
@@ -14,8 +17,6 @@ namespace ControlePreventiva_INLINE_CFC
         {
             // TODO: This line of code loads data into the 'controlePreventiva_ICDataSet.ControlePreventivasIC' table. You can move, or remove it, as needed.
             this.controlePreventivasICTableAdapter.Fill(this.controlePreventiva_ICDataSet.ControlePreventivasIC);
-
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -81,6 +82,51 @@ namespace ControlePreventiva_INLINE_CFC
         private void button1_Click_1(object sender, EventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                OleDbConnection conn = new OleDbConnection();
+                conn.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=V:\Tools\Controle_Preventiva_IC\ControlePreventiva_IC.mdb; User Id=admin;Password=";
+                string query = "SELECT * FROM ControlePreventivasIC";
+                string separator = ",";
+                string strFilePath = @"C:\prod\Controle_Preventiva_IC_export.csv";
+
+                using (StreamWriter sw = new StreamWriter(strFilePath))
+                using (OleDbCommand Cmd = new OleDbCommand(query, conn))
+                {
+                    conn.Open();
+                    using (OleDbDataReader dr = Cmd.ExecuteReader())
+                    {
+                        int fields = dr.FieldCount - 1;
+                        while (dr.Read())
+                        {
+                            StringBuilder sb = new StringBuilder();
+                            for (int i = 0; i <= fields; i++)
+                            {
+                                if (i != fields)
+                                {
+                                    separator = separator;
+                                }
+                                else
+                                {
+                                    separator = ",";
+                                }
+                                sb.Append(dr[i].ToString() + separator);
+
+                            }
+                            sw.WriteLine(sb.ToString());
+                        }
+                    }
+                }
+            }
+            catch(Exception ex) {
+
+                MessageBox.Show("Não foi possivel exportar os dados para o excel!!!!" + ex);
+            }
+
         }
     }
 }
