@@ -18,3 +18,4 @@ C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_
 C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\obj\Debug\ControlePreventiva-INLINE_CFC.csproj.CoreCompileInputs.cache
 C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\obj\Debug\ControlePreventiva-INLINE_CFC.exe
 C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\obj\Debug\ControlePreventiva-INLINE_CFC.pdb
+C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\obj\Debug\ControlePreventiva-INLINE_CFC.csprojAssemblyReference.cache
