@@ -72,6 +72,7 @@ namespace ControlePreventiva_INLINE_CFC
             {
                 controlePreventivasICBindingSource.EndEdit();
                 controlePreventivasICTableAdapter.Update(controlePreventiva_ICDataSet);
+                MessageBox.Show("Registro salvo com sucesso!!!");
             }
             catch
             {
@@ -121,6 +122,7 @@ namespace ControlePreventiva_INLINE_CFC
                         }
                     }
                 }
+                MessageBox.Show("Dados exportados com sucesso para a folder C:\\prod\\Controle_Preventiva_IC_export.csv!!!!");
             }
             catch(Exception ex) {
 

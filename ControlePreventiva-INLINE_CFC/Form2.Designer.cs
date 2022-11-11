@@ -64,6 +64,11 @@
             this.comboBoxType = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.controlePreventivasICTableAdapter = new ControlePreventiva_INLINE_CFC.ControlePreventiva_ICDataSetTableAdapters.ControlePreventivasICTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoEstacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeEstacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -77,11 +82,6 @@
             this.trocaDeFontesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.trocaDePCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comentariosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.controlePreventivasICTableAdapter = new ControlePreventiva_INLINE_CFC.ControlePreventiva_ICDataSetTableAdapters.ControlePreventivasICTableAdapter();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.controlePreventivasICBindingSource)).BeginInit();
@@ -504,11 +504,59 @@
             this.dataGridView1.Size = new System.Drawing.Size(1243, 392);
             this.dataGridView1.TabIndex = 4;
             // 
+            // controlePreventivasICTableAdapter
+            // 
+            this.controlePreventivasICTableAdapter.ClearBeforeFill = true;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(1189, 762);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(55, 23);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Sair";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(5, 768);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(107, 12);
+            this.label14.TabIndex = 6;
+            this.label14.Text = "Developed by A. Patricio";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(354, 58);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(566, 31);
+            this.label15.TabIndex = 33;
+            this.label15.Text = "CONTROLE DE PREVENTIVA INLINE / CFC";
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Green;
+            this.button2.Location = new System.Drawing.Point(1143, 100);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(107, 28);
+            this.button2.TabIndex = 34;
+            this.button2.Text = "Export to Excel";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
             // iDDataGridViewTextBoxColumn
             // 
             this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
             this.iDDataGridViewTextBoxColumn.HeaderText = "Nº OS";
             this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.Visible = false;
             // 
             // tipoEstacaoDataGridViewTextBoxColumn
             // 
@@ -582,53 +630,6 @@
             this.comentariosDataGridViewTextBoxColumn.HeaderText = "Comentários";
             this.comentariosDataGridViewTextBoxColumn.Name = "comentariosDataGridViewTextBoxColumn";
             // 
-            // controlePreventivasICTableAdapter
-            // 
-            this.controlePreventivasICTableAdapter.ClearBeforeFill = true;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1189, 762);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(55, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Sair";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(5, 768);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(107, 12);
-            this.label14.TabIndex = 6;
-            this.label14.Text = "Developed by A. Patricio";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(412, 46);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(434, 25);
-            this.label15.TabIndex = 33;
-            this.label15.Text = "CONTROLE DE PREVENTIVA INLINE / CFC";
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Green;
-            this.button2.Location = new System.Drawing.Point(1143, 100);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(107, 28);
-            this.button2.TabIndex = 34;
-            this.button2.Text = "Export to Excel";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -695,6 +696,10 @@
         private ControlePreventiva_ICDataSet controlePreventiva_ICDataSet;
         private System.Windows.Forms.BindingSource controlePreventivasICBindingSource;
         private ControlePreventiva_ICDataSetTableAdapters.ControlePreventivasICTableAdapter controlePreventivasICTableAdapter;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tipoEstacaoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeEstacaoDataGridViewTextBoxColumn;
@@ -708,9 +713,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn trocaDeFontesDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn trocaDePCDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn comentariosDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Button button2;
     }
 }
