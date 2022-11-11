@@ -31,6 +31,12 @@
             this.components = new System.ComponentModel.Container();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.controlePreventivasICBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.controlePreventiva_ICDataSet = new ControlePreventiva_INLINE_CFC.ControlePreventiva_ICDataSet();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.incluir = new System.Windows.Forms.Button();
             this.salvar = new System.Windows.Forms.Button();
             this.deletar = new System.Windows.Forms.Button();
@@ -57,14 +63,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.comboBoxType = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.controlePreventiva_ICDataSet = new ControlePreventiva_INLINE_CFC.ControlePreventiva_ICDataSet();
-            this.controlePreventivasICBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.controlePreventivasICTableAdapter = new ControlePreventiva_INLINE_CFC.ControlePreventiva_ICDataSetTableAdapters.ControlePreventivasICTableAdapter();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoEstacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeEstacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -78,22 +77,24 @@
             this.trocaDeFontesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.trocaDePCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comentariosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.controlePreventivasICTableAdapter = new ControlePreventiva_INLINE_CFC.ControlePreventiva_ICDataSetTableAdapters.ControlePreventivasICTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.controlePreventiva_ICDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.controlePreventivasICBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.controlePreventiva_ICDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.Window;
             this.pictureBox1.Image = global::ControlePreventiva_INLINE_CFC.Properties.Resources.FLEX_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(2, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(145, 77);
+            this.pictureBox1.Size = new System.Drawing.Size(177, 114);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -130,15 +131,65 @@
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.comboBoxType);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(12, 87);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(12, 134);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(1238, 255);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Registro";
+            this.groupBox2.Text = "Registro O.S";
+            // 
+            // maskedTextBox2
+            // 
+            this.maskedTextBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlePreventivasICBindingSource, "HoraFim", true));
+            this.maskedTextBox2.Location = new System.Drawing.Point(972, 35);
+            this.maskedTextBox2.Mask = "00:00";
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(70, 20);
+            this.maskedTextBox2.TabIndex = 32;
+            this.maskedTextBox2.ValidatingType = typeof(System.DateTime);
+            // 
+            // controlePreventivasICBindingSource
+            // 
+            this.controlePreventivasICBindingSource.DataMember = "ControlePreventivasIC";
+            this.controlePreventivasICBindingSource.DataSource = this.controlePreventiva_ICDataSet;
+            // 
+            // controlePreventiva_ICDataSet
+            // 
+            this.controlePreventiva_ICDataSet.DataSetName = "ControlePreventiva_ICDataSet";
+            this.controlePreventiva_ICDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(969, 19);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(59, 13);
+            this.label13.TabIndex = 31;
+            this.label13.Text = "HORA FIM";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(878, 19);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(73, 13);
+            this.label6.TabIndex = 30;
+            this.label6.Text = "HORA INICIO";
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlePreventivasICBindingSource, "HoraInicio", true));
+            this.maskedTextBox1.Location = new System.Drawing.Point(881, 37);
+            this.maskedTextBox1.Mask = "00:00";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(70, 20);
+            this.maskedTextBox1.TabIndex = 29;
+            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
             // 
             // incluir
             // 
+            this.incluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.incluir.Location = new System.Drawing.Point(1152, 19);
             this.incluir.Name = "incluir";
             this.incluir.Size = new System.Drawing.Size(80, 43);
@@ -149,6 +200,7 @@
             // 
             // salvar
             // 
+            this.salvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salvar.Location = new System.Drawing.Point(6, 184);
             this.salvar.Name = "salvar";
             this.salvar.Size = new System.Drawing.Size(88, 36);
@@ -159,6 +211,8 @@
             // 
             // deletar
             // 
+            this.deletar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deletar.ForeColor = System.Drawing.Color.Red;
             this.deletar.Location = new System.Drawing.Point(1157, 226);
             this.deletar.Name = "deletar";
             this.deletar.Size = new System.Drawing.Size(75, 23);
@@ -169,6 +223,7 @@
             // 
             // proximo
             // 
+            this.proximo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.proximo.Location = new System.Drawing.Point(75, 226);
             this.proximo.Name = "proximo";
             this.proximo.Size = new System.Drawing.Size(60, 23);
@@ -179,6 +234,7 @@
             // 
             // anterior
             // 
+            this.anterior.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.anterior.Location = new System.Drawing.Point(5, 226);
             this.anterior.Name = "anterior";
             this.anterior.Size = new System.Drawing.Size(60, 23);
@@ -291,11 +347,12 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 99);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(7, 107);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 13);
+            this.label7.Size = new System.Drawing.Size(147, 13);
             this.label7.TabIndex = 12;
-            this.label7.Text = "HOUVE TROCA?";
+            this.label7.Text = "HOUVE TROCA/ATUAÇÃO?";
             // 
             // label5
             // 
@@ -421,44 +478,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "INLINE / CFC";
             // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlePreventivasICBindingSource, "HoraInicio", true));
-            this.maskedTextBox1.Location = new System.Drawing.Point(881, 37);
-            this.maskedTextBox1.Mask = "00:00";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(70, 20);
-            this.maskedTextBox1.TabIndex = 29;
-            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(878, 19);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 13);
-            this.label6.TabIndex = 30;
-            this.label6.Text = "HORA INICIO";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(969, 19);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(59, 13);
-            this.label13.TabIndex = 31;
-            this.label13.Text = "HORA FIM";
-            // 
-            // maskedTextBox2
-            // 
-            this.maskedTextBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlePreventivasICBindingSource, "HoraFim", true));
-            this.maskedTextBox2.Location = new System.Drawing.Point(972, 35);
-            this.maskedTextBox2.Mask = "00:00";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(70, 20);
-            this.maskedTextBox2.TabIndex = 32;
-            this.maskedTextBox2.ValidatingType = typeof(System.DateTime);
-            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToOrderColumns = true;
@@ -479,24 +498,10 @@
             this.trocaDePCDataGridViewTextBoxColumn,
             this.comentariosDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.controlePreventivasICBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(7, 348);
+            this.dataGridView1.Location = new System.Drawing.Point(7, 396);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1237, 454);
+            this.dataGridView1.Size = new System.Drawing.Size(1237, 360);
             this.dataGridView1.TabIndex = 4;
-            // 
-            // controlePreventiva_ICDataSet
-            // 
-            this.controlePreventiva_ICDataSet.DataSetName = "ControlePreventiva_ICDataSet";
-            this.controlePreventiva_ICDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // controlePreventivasICBindingSource
-            // 
-            this.controlePreventivasICBindingSource.DataMember = "ControlePreventivasIC";
-            this.controlePreventivasICBindingSource.DataSource = this.controlePreventiva_ICDataSet;
-            // 
-            // controlePreventivasICTableAdapter
-            // 
-            this.controlePreventivasICTableAdapter.ClearBeforeFill = true;
             // 
             // iDDataGridViewTextBoxColumn
             // 
@@ -576,9 +581,14 @@
             this.comentariosDataGridViewTextBoxColumn.HeaderText = "Comentários";
             this.comentariosDataGridViewTextBoxColumn.Name = "comentariosDataGridViewTextBoxColumn";
             // 
+            // controlePreventivasICTableAdapter
+            // 
+            this.controlePreventivasICTableAdapter.ClearBeforeFill = true;
+            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1189, 808);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(1189, 762);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(55, 23);
             this.button1.TabIndex = 5;
@@ -590,7 +600,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(-1, 820);
+            this.label14.Location = new System.Drawing.Point(5, 768);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(107, 12);
             this.label14.TabIndex = 6;
@@ -600,7 +610,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(369, 26);
+            this.label15.Location = new System.Drawing.Point(412, 46);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(434, 25);
             this.label15.TabIndex = 33;
@@ -610,7 +620,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1262, 841);
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1262, 788);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.button1);
@@ -625,9 +636,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.controlePreventiva_ICDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.controlePreventivasICBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.controlePreventiva_ICDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
