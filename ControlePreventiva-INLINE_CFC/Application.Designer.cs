@@ -94,6 +94,7 @@
             this.pFAILDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pYIELDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.weekDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -450,7 +451,7 @@
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Green;
-            this.button2.Location = new System.Drawing.Point(1143, 71);
+            this.button2.Location = new System.Drawing.Point(1143, 45);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(107, 28);
             this.button2.TabIndex = 34;
@@ -742,12 +743,25 @@
             this.weekDataGridViewTextBoxColumn.Name = "weekDataGridViewTextBoxColumn";
             this.weekDataGridViewTextBoxColumn.Width = 70;
             // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.button3.Location = new System.Drawing.Point(1143, 79);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(107, 23);
+            this.button3.TabIndex = 37;
+            this.button3.Text = "Backup DB";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Application
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(1262, 813);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button2);
@@ -843,5 +857,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn pFAILDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pYIELDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn weekDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button3;
     }
 }

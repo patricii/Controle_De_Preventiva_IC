@@ -133,5 +133,22 @@ namespace ControlePreventiva_INLINE_CFC
             }
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string strFilePath = @"V:\Tools\Controle_Preventiva_IC\ControlePreventiva_IC.mdb";
+            string strFileDestination = @"C:\temp\Backup_Controle_Preventiva_IC.mdb";
+
+            try
+            {
+                File.Copy(strFilePath, strFileDestination, true);
+                MessageBox.Show("Backup do DataBase criado com sucesso!!!");
+            }
+            catch (IOException ex)
+            {
+                MessageBox.Show("Não foi possivel criar um backup do DataBase! : " + ex);
+            }
+        }
+
     }
 }
