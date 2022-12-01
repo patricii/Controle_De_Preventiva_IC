@@ -17,9 +17,6 @@ namespace ControlePreventiva_INLINE_CFC
         {
             // TODO: This line of code loads data into the 'controlePreventiva_ICDataSet.ControlePreventivasIC' table. You can move, or remove it, as needed.
             this.controlePreventivasICTableAdapter.Fill(this.controlePreventiva_ICDataSet.ControlePreventivasIC);
-            // TODO: This line of code loads data into the 'controlePreventiva_ICDataSet.ControlePreventivasIC' table. You can move, or remove it, as needed.
-            // this.controlePreventivasICTableAdapter.Fill(this.controlePreventiva_ICDataSet.ControlePreventivasIC);
-
 
         }
 
@@ -27,7 +24,7 @@ namespace ControlePreventiva_INLINE_CFC
         {
             try
             {
-                //controlePreventivasICBindingSource.MovePrevious();
+                controlePreventivasICBindingSource.MovePrevious();
             }
             catch (Exception ex){
                 MessageBox.Show("Não foi possivel conectar com o Banco de Dados! : " + ex);
@@ -38,7 +35,7 @@ namespace ControlePreventiva_INLINE_CFC
         {
             try
             {
-                //controlePreventivasICBindingSource.MoveNext();
+                controlePreventivasICBindingSource.MoveNext();
             }
             catch (Exception ex)
             {
@@ -50,7 +47,7 @@ namespace ControlePreventiva_INLINE_CFC
         {
             try
             {
-                //controlePreventivasICBindingSource.RemoveCurrent();
+                controlePreventivasICBindingSource.RemoveCurrent();
             }
             catch (Exception ex)
             {
@@ -62,7 +59,7 @@ namespace ControlePreventiva_INLINE_CFC
         {
             try
             {
-               //controlePreventivasICBindingSource.AddNew();
+               controlePreventivasICBindingSource.AddNew();
             }
             catch (Exception ex)
             {
@@ -74,8 +71,8 @@ namespace ControlePreventiva_INLINE_CFC
         {
             try
             {
-               // controlePreventivasICBindingSource.EndEdit();
-               // controlePreventivasICTableAdapter.Update(controlePreventiva_ICDataSet);
+                controlePreventivasICBindingSource.EndEdit();
+                controlePreventivasICTableAdapter.Update(controlePreventiva_ICDataSet);
                 MessageBox.Show("Registro salvo com sucesso!!!");
             }
             catch (Exception ex)
