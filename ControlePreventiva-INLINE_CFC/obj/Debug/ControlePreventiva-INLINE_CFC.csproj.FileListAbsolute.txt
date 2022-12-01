@@ -8,13 +8,13 @@ C:\Users\jagapatr\source\repos\ControlePreventiva-INLINE_CFC\ControlePreventiva-
 C:\Users\jagapatr\source\repos\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\obj\Debug\ControlePreventiva-INLINE_CFC.csproj.CoreCompileInputs.cache
 C:\Users\jagapatr\source\repos\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\obj\Debug\ControlePreventiva-INLINE_CFC.exe
 C:\Users\jagapatr\source\repos\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\obj\Debug\ControlePreventiva-INLINE_CFC.pdb
+C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\obj\Debug\ControlePreventiva_INLINE_CFC.Login.resources
+C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\obj\Debug\ControlePreventiva_INLINE_CFC.Application.resources
+C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\obj\Debug\ControlePreventiva_INLINE_CFC.Properties.Resources.resources
+C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\obj\Debug\ControlePreventiva-INLINE_CFC.csproj.GenerateResource.Cache
 C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\bin\Debug\ControlePreventiva-INLINE_CFC.exe.config
 C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\bin\Debug\ControlePreventiva-INLINE_CFC.exe
 C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\bin\Debug\ControlePreventiva-INLINE_CFC.pdb
-C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\obj\Debug\ControlePreventiva_INLINE_CFC.Properties.Resources.resources
-C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\obj\Debug\ControlePreventiva-INLINE_CFC.csproj.GenerateResource.cache
-C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\obj\Debug\ControlePreventiva-INLINE_CFC.exe
-C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\obj\Debug\ControlePreventiva-INLINE_CFC.pdb
 C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
 C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\bin\Debug\xunit.abstractions.dll
 C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\bin\Debug\xunit.assert.dll
@@ -24,6 +24,5 @@ C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_
 C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\bin\Debug\xunit.assert.xml
 C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\bin\Debug\xunit.core.xml
 C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\bin\Debug\xunit.execution.dotnet.xml
-C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\obj\Debug\ControlePreventiva-INLINE_CFC.csprojResolveAssemblyReference.cache
-C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\obj\Debug\ControlePreventiva_INLINE_CFC.Login.resources
-C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\obj\Debug\ControlePreventiva_INLINE_CFC.Application.resources
+C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\obj\Debug\ControlePreventiva-INLINE_CFC.exe
+C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\obj\Debug\ControlePreventiva-INLINE_CFC.pdb

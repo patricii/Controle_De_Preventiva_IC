@@ -74,11 +74,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ControlePreventiva_ICDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ControlePreventiva_ICDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ControlePreventiva_ICDataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,17 +114,6 @@
     </None>
     <None Include="ControlePreventiva_ICDataSet.xss">
       <DependentUpon>ControlePreventiva_ICDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="ControlePreventiva_ICDataSet1.xsc">
-      <DependentUpon>ControlePreventiva_ICDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="ControlePreventiva_ICDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ControlePreventiva_ICDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="ControlePreventiva_ICDataSet1.xss">
-      <DependentUpon>ControlePreventiva_ICDataSet1.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
