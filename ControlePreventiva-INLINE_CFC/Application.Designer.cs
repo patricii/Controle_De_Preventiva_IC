@@ -250,7 +250,7 @@
             this.comboBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlePreventivasICBindingSource, "Item_trocado", true));
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Items.AddRange(new object[] {
-            "CABO",
+            "CABO USB",
             "EXTENDER",
             "COMPUTADOR",
             "FONTE"});
@@ -440,7 +440,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(402, 9);
+            this.label15.Location = new System.Drawing.Point(402, 34);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(455, 31);
             this.label15.TabIndex = 33;

@@ -94,7 +94,7 @@ namespace ControlePreventiva_INLINE_CFC
                 conn.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=V:\Tools\Controle_Preventiva_IC\ControlePreventiva_IC.mdb; User Id=admin;Password=";
                 string query = "SELECT * FROM ControlePreventivasIC";
                 string separator = ",";
-                string strFilePath = @"C:\prod\Controle_Preventiva_IC_export.csv";
+                string strFilePath = @"C:\temp\Controle_Preventiva_IC_export.csv";
 
                 using (StreamWriter sw = new StreamWriter(strFilePath))
                 using (OleDbCommand Cmd = new OleDbCommand(query, conn))
