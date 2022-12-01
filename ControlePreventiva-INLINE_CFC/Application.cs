@@ -26,7 +26,8 @@ namespace ControlePreventiva_INLINE_CFC
             {
                 controlePreventivasICBindingSource.MovePrevious();
             }
-            catch (Exception ex){
+            catch (Exception ex)
+            {
                 MessageBox.Show("Não foi possivel conectar com o Banco de Dados! : " + ex);
             }
         }
@@ -59,7 +60,16 @@ namespace ControlePreventiva_INLINE_CFC
         {
             try
             {
-               controlePreventivasICBindingSource.AddNew();
+                controlePreventivasICBindingSource.AddNew();
+                textBoxUtilizacao.Text = "0%";
+                textBoxAVG.Text = "0";
+                textBoxPFAIL.Text = "0";
+                textBoxPPASS.Text = "0";
+                textBoxPYIELD.Text = "0%";
+                textBoxPHANDLE.Text = "0";
+                textBoxWeek.Text = "Week_";
+                textBoxComentario.Text = "NA";
+
             }
             catch (Exception ex)
             {
@@ -107,7 +117,7 @@ namespace ControlePreventiva_INLINE_CFC
                         {
                             StringBuilder sb = new StringBuilder();
                             for (int i = 0; i <= fields; i++)
-                            {                               
+                            {
                                 sb.Append(dr[i].ToString() + separator);
                             }
                             sw.WriteLine(sb.ToString());
@@ -116,7 +126,8 @@ namespace ControlePreventiva_INLINE_CFC
                 }
                 MessageBox.Show("Dados exportados com sucesso para a folder C:\\temp\\Controle_Preventiva_IC_export.csv!!!!");
             }
-            catch(Exception ex) {
+            catch (Exception ex)
+            {
 
                 MessageBox.Show("Não foi possivel exportar os dados para o excel!!!! : " + ex);
             }

@@ -31,14 +31,14 @@
             this.components = new System.ComponentModel.Container();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxWeek = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.incluir = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxComentario = new System.Windows.Forms.TextBox();
             this.salvar = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
@@ -61,17 +61,17 @@
             this.label15 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBoxPYIELD = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBoxPFAIL = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBoxPPASS = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBoxPHANDLE = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxAVG = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxUtilizacao = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.controlePreventiva_ICDataSet = new ControlePreventiva_INLINE_CFC.ControlePreventiva_ICDataSet();
@@ -115,14 +115,14 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.textBoxWeek);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.comboBox6);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.comboBox4);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.incluir);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.textBoxComentario);
             this.groupBox2.Controls.Add(this.salvar);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.comboBox5);
@@ -145,14 +145,14 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Registro de Atuação";
             // 
-            // textBox2
+            // textBoxWeek
             // 
-            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlePreventivasICBindingSource, "week", true));
-            this.textBox2.Location = new System.Drawing.Point(1037, 127);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(184, 20);
-            this.textBox2.TabIndex = 34;
-            this.textBox2.Text = "Week_1";
+            this.textBoxWeek.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlePreventivasICBindingSource, "week", true));
+            this.textBoxWeek.Location = new System.Drawing.Point(1037, 127);
+            this.textBoxWeek.Name = "textBoxWeek";
+            this.textBoxWeek.Size = new System.Drawing.Size(184, 20);
+            this.textBoxWeek.TabIndex = 34;
+            this.textBoxWeek.Text = "Week_1";
             // 
             // label9
             // 
@@ -217,13 +217,13 @@
             this.incluir.UseVisualStyleBackColor = true;
             this.incluir.Click += new System.EventHandler(this.incluir_Click);
             // 
-            // textBox1
+            // textBoxComentario
             // 
-            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlePreventivasICBindingSource, "Comentarios", true));
-            this.textBox1.Location = new System.Drawing.Point(344, 127);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(687, 20);
-            this.textBox1.TabIndex = 23;
+            this.textBoxComentario.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlePreventivasICBindingSource, "Comentarios", true));
+            this.textBoxComentario.Location = new System.Drawing.Point(344, 127);
+            this.textBoxComentario.Name = "textBoxComentario";
+            this.textBoxComentario.Size = new System.Drawing.Size(687, 20);
+            this.textBoxComentario.TabIndex = 23;
             // 
             // salvar
             // 
@@ -460,17 +460,17 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox8);
+            this.groupBox1.Controls.Add(this.textBoxPYIELD);
             this.groupBox1.Controls.Add(this.label18);
-            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Controls.Add(this.textBoxPFAIL);
             this.groupBox1.Controls.Add(this.label17);
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.textBoxPPASS);
             this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.textBoxPHANDLE);
             this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.textBoxAVG);
             this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.textBoxUtilizacao);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Location = new System.Drawing.Point(12, 268);
             this.groupBox1.Name = "groupBox1";
@@ -479,14 +479,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Performance";
             // 
-            // textBox8
+            // textBoxPYIELD
             // 
-            this.textBox8.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlePreventivasICBindingSource, "PYIELD", true));
-            this.textBox8.Location = new System.Drawing.Point(396, 37);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(67, 20);
-            this.textBox8.TabIndex = 11;
-            this.textBox8.Text = "0%";
+            this.textBoxPYIELD.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlePreventivasICBindingSource, "PYIELD", true));
+            this.textBoxPYIELD.Location = new System.Drawing.Point(396, 37);
+            this.textBoxPYIELD.Name = "textBoxPYIELD";
+            this.textBoxPYIELD.Size = new System.Drawing.Size(67, 20);
+            this.textBoxPYIELD.TabIndex = 11;
+            this.textBoxPYIELD.Text = "0%";
             // 
             // label18
             // 
@@ -497,14 +497,14 @@
             this.label18.TabIndex = 10;
             this.label18.Text = "P_YIELD %";
             // 
-            // textBox7
+            // textBoxPFAIL
             // 
-            this.textBox7.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlePreventivasICBindingSource, "PFAIL", true));
-            this.textBox7.Location = new System.Drawing.Point(323, 37);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(67, 20);
-            this.textBox7.TabIndex = 9;
-            this.textBox7.Text = "0";
+            this.textBoxPFAIL.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlePreventivasICBindingSource, "PFAIL", true));
+            this.textBoxPFAIL.Location = new System.Drawing.Point(323, 37);
+            this.textBoxPFAIL.Name = "textBoxPFAIL";
+            this.textBoxPFAIL.Size = new System.Drawing.Size(67, 20);
+            this.textBoxPFAIL.TabIndex = 9;
+            this.textBoxPFAIL.Text = "0";
             // 
             // label17
             // 
@@ -515,14 +515,14 @@
             this.label17.TabIndex = 8;
             this.label17.Text = "P_FAIL";
             // 
-            // textBox6
+            // textBoxPPASS
             // 
-            this.textBox6.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlePreventivasICBindingSource, "PPASS", true));
-            this.textBox6.Location = new System.Drawing.Point(250, 37);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(67, 20);
-            this.textBox6.TabIndex = 7;
-            this.textBox6.Text = "0";
+            this.textBoxPPASS.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlePreventivasICBindingSource, "PPASS", true));
+            this.textBoxPPASS.Location = new System.Drawing.Point(250, 37);
+            this.textBoxPPASS.Name = "textBoxPPASS";
+            this.textBoxPPASS.Size = new System.Drawing.Size(67, 20);
+            this.textBoxPPASS.TabIndex = 7;
+            this.textBoxPPASS.Text = "0";
             // 
             // label16
             // 
@@ -533,14 +533,14 @@
             this.label16.TabIndex = 6;
             this.label16.Text = "P_PASS";
             // 
-            // textBox5
+            // textBoxPHANDLE
             // 
-            this.textBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlePreventivasICBindingSource, "PHANDLE", true));
-            this.textBox5.Location = new System.Drawing.Point(177, 37);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(67, 20);
-            this.textBox5.TabIndex = 5;
-            this.textBox5.Text = "0";
+            this.textBoxPHANDLE.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlePreventivasICBindingSource, "PHANDLE", true));
+            this.textBoxPHANDLE.Location = new System.Drawing.Point(177, 37);
+            this.textBoxPHANDLE.Name = "textBoxPHANDLE";
+            this.textBoxPHANDLE.Size = new System.Drawing.Size(67, 20);
+            this.textBoxPHANDLE.TabIndex = 5;
+            this.textBoxPHANDLE.Text = "0";
             // 
             // label13
             // 
@@ -551,14 +551,14 @@
             this.label13.TabIndex = 4;
             this.label13.Text = "P_Handle";
             // 
-            // textBox4
+            // textBoxAVG
             // 
-            this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlePreventivasICBindingSource, "AVGTIME", true));
-            this.textBox4.Location = new System.Drawing.Point(100, 37);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(67, 20);
-            this.textBox4.TabIndex = 3;
-            this.textBox4.Text = "0";
+            this.textBoxAVG.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlePreventivasICBindingSource, "AVGTIME", true));
+            this.textBoxAVG.Location = new System.Drawing.Point(100, 37);
+            this.textBoxAVG.Name = "textBoxAVG";
+            this.textBoxAVG.Size = new System.Drawing.Size(67, 20);
+            this.textBoxAVG.TabIndex = 3;
+            this.textBoxAVG.Text = "0";
             // 
             // label11
             // 
@@ -569,14 +569,14 @@
             this.label11.TabIndex = 2;
             this.label11.Text = "AVG TIME /s";
             // 
-            // textBox3
+            // textBoxUtilizacao
             // 
-            this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlePreventivasICBindingSource, "Utilizacao", true));
-            this.textBox3.Location = new System.Drawing.Point(13, 37);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(78, 20);
-            this.textBox3.TabIndex = 1;
-            this.textBox3.Text = "0%";
+            this.textBoxUtilizacao.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlePreventivasICBindingSource, "Utilizacao", true));
+            this.textBoxUtilizacao.Location = new System.Drawing.Point(13, 37);
+            this.textBoxUtilizacao.Name = "textBoxUtilizacao";
+            this.textBoxUtilizacao.Size = new System.Drawing.Size(78, 20);
+            this.textBoxUtilizacao.TabIndex = 1;
+            this.textBoxUtilizacao.Text = "0%";
             // 
             // label10
             // 
@@ -791,7 +791,7 @@
         private System.Windows.Forms.Button deletar;
         private System.Windows.Forms.Button proximo;
         private System.Windows.Forms.Button anterior;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxComentario;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Label label8;
@@ -803,24 +803,24 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxWeek;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox comboBox6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBoxPYIELD;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBoxPFAIL;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBoxPPASS;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBoxPHANDLE;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxAVG;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxUtilizacao;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridView dataGridView1;
         private ControlePreventiva_ICDataSet controlePreventiva_ICDataSet;
