@@ -20,7 +20,7 @@ namespace ControlePreventiva_INLINE_CFC
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) //move previous
         {
             try
             {
@@ -32,7 +32,7 @@ namespace ControlePreventiva_INLINE_CFC
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) //move Next
         {
             try
             {
@@ -44,7 +44,7 @@ namespace ControlePreventiva_INLINE_CFC
             }
         }
 
-        private void deletar_Click(object sender, EventArgs e)
+        private void deletar_Click(object sender, EventArgs e) //Delete
         {
             try
             {
@@ -56,7 +56,7 @@ namespace ControlePreventiva_INLINE_CFC
             }
         }
 
-        private void incluir_Click(object sender, EventArgs e)
+        private void incluir_Click(object sender, EventArgs e) //Add new
         {
             try
             {
@@ -80,7 +80,7 @@ namespace ControlePreventiva_INLINE_CFC
             }
         }
 
-        private void salvar_Click(object sender, EventArgs e)
+        private void salvar_Click(object sender, EventArgs e) //Save
         {
             try
             {
@@ -94,12 +94,12 @@ namespace ControlePreventiva_INLINE_CFC
             }
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e) //exit
         {
             Environment.Exit(0);
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e) //csv export
         {
             try
             {
@@ -137,7 +137,7 @@ namespace ControlePreventiva_INLINE_CFC
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e) //DB backup
         {
             string strFilePath = @"V:\Tools\Controle_Preventiva_IC\ControlePreventiva_IC.mdb";
             string strFileDestination = @"C:\temp\Backup_Controle_Preventiva_IC.mdb";

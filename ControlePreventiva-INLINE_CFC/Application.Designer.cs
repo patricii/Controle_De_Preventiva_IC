@@ -107,9 +107,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.Window;
             this.pictureBox1.Image = global::ControlePreventiva_INLINE_CFC.Properties.Resources.FLEX_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(13, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(168, 95);
+            this.pictureBox1.Size = new System.Drawing.Size(181, 95);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -212,7 +212,7 @@
             this.incluir.ForeColor = System.Drawing.Color.Green;
             this.incluir.Location = new System.Drawing.Point(8, 19);
             this.incluir.Name = "incluir";
-            this.incluir.Size = new System.Drawing.Size(101, 38);
+            this.incluir.Size = new System.Drawing.Size(83, 44);
             this.incluir.TabIndex = 28;
             this.incluir.Text = "NOVO REGISTRO";
             this.incluir.UseVisualStyleBackColor = true;
@@ -229,9 +229,9 @@
             // salvar
             // 
             this.salvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.salvar.Location = new System.Drawing.Point(115, 19);
+            this.salvar.Location = new System.Drawing.Point(97, 19);
             this.salvar.Name = "salvar";
-            this.salvar.Size = new System.Drawing.Size(67, 38);
+            this.salvar.Size = new System.Drawing.Size(67, 44);
             this.salvar.TabIndex = 27;
             this.salvar.Text = "SALVAR";
             this.salvar.UseVisualStyleBackColor = true;
@@ -386,11 +386,11 @@
             // 
             this.deletar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deletar.ForeColor = System.Drawing.Color.Red;
-            this.deletar.Location = new System.Drawing.Point(1175, 348);
+            this.deletar.Location = new System.Drawing.Point(1168, 320);
             this.deletar.Name = "deletar";
-            this.deletar.Size = new System.Drawing.Size(75, 23);
+            this.deletar.Size = new System.Drawing.Size(82, 51);
             this.deletar.TabIndex = 26;
-            this.deletar.Text = "DELETAR";
+            this.deletar.Text = "DELETAR REGISTRO";
             this.deletar.UseVisualStyleBackColor = true;
             this.deletar.Click += new System.EventHandler(this.deletar_Click);
             // 
@@ -419,7 +419,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1195, 790);
+            this.button1.Location = new System.Drawing.Point(1195, 789);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(55, 23);
             this.button1.TabIndex = 5;
@@ -441,11 +441,11 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(387, 36);
+            this.label15.Location = new System.Drawing.Point(374, 36);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(535, 37);
+            this.label15.Size = new System.Drawing.Size(518, 37);
             this.label15.TabIndex = 33;
-            this.label15.Text = "CONTROLE DE PREVENTIVA CFC";
+            this.label15.Text = "MAPEAMENTO DE PONTOS CFC";
             // 
             // button2
             // 
@@ -473,9 +473,10 @@
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.textBoxUtilizacao);
             this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 268);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(478, 64);
+            this.groupBox1.Size = new System.Drawing.Size(499, 64);
             this.groupBox1.TabIndex = 35;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Performance";
@@ -483,7 +484,7 @@
             // textBoxPYIELD
             // 
             this.textBoxPYIELD.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlePreventivasICBindingSource, "PYIELD", true));
-            this.textBoxPYIELD.Location = new System.Drawing.Point(396, 37);
+            this.textBoxPYIELD.Location = new System.Drawing.Point(422, 37);
             this.textBoxPYIELD.Name = "textBoxPYIELD";
             this.textBoxPYIELD.Size = new System.Drawing.Size(67, 20);
             this.textBoxPYIELD.TabIndex = 11;
@@ -492,7 +493,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(394, 20);
+            this.label18.Location = new System.Drawing.Point(420, 20);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(62, 13);
             this.label18.TabIndex = 10;
@@ -501,7 +502,7 @@
             // textBoxPFAIL
             // 
             this.textBoxPFAIL.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlePreventivasICBindingSource, "PFAIL", true));
-            this.textBoxPFAIL.Location = new System.Drawing.Point(323, 37);
+            this.textBoxPFAIL.Location = new System.Drawing.Point(345, 37);
             this.textBoxPFAIL.Name = "textBoxPFAIL";
             this.textBoxPFAIL.Size = new System.Drawing.Size(67, 20);
             this.textBoxPFAIL.TabIndex = 9;
@@ -510,7 +511,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(321, 20);
+            this.label17.Location = new System.Drawing.Point(343, 20);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(42, 13);
             this.label17.TabIndex = 8;
@@ -519,7 +520,7 @@
             // textBoxPPASS
             // 
             this.textBoxPPASS.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlePreventivasICBindingSource, "PPASS", true));
-            this.textBoxPPASS.Location = new System.Drawing.Point(250, 37);
+            this.textBoxPPASS.Location = new System.Drawing.Point(267, 37);
             this.textBoxPPASS.Name = "textBoxPPASS";
             this.textBoxPPASS.Size = new System.Drawing.Size(67, 20);
             this.textBoxPPASS.TabIndex = 7;
@@ -528,7 +529,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(248, 20);
+            this.label16.Location = new System.Drawing.Point(265, 20);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(48, 13);
             this.label16.TabIndex = 6;
@@ -537,7 +538,7 @@
             // textBoxPHANDLE
             // 
             this.textBoxPHANDLE.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlePreventivasICBindingSource, "PHANDLE", true));
-            this.textBoxPHANDLE.Location = new System.Drawing.Point(177, 37);
+            this.textBoxPHANDLE.Location = new System.Drawing.Point(188, 37);
             this.textBoxPHANDLE.Name = "textBoxPHANDLE";
             this.textBoxPHANDLE.Size = new System.Drawing.Size(67, 20);
             this.textBoxPHANDLE.TabIndex = 5;
@@ -546,7 +547,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(174, 20);
+            this.label13.Location = new System.Drawing.Point(185, 20);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(54, 13);
             this.label13.TabIndex = 4;
@@ -555,7 +556,7 @@
             // textBoxAVG
             // 
             this.textBoxAVG.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlePreventivasICBindingSource, "AVGTIME", true));
-            this.textBoxAVG.Location = new System.Drawing.Point(100, 37);
+            this.textBoxAVG.Location = new System.Drawing.Point(106, 37);
             this.textBoxAVG.Name = "textBoxAVG";
             this.textBoxAVG.Size = new System.Drawing.Size(67, 20);
             this.textBoxAVG.TabIndex = 3;
@@ -564,7 +565,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(97, 20);
+            this.label11.Location = new System.Drawing.Point(103, 20);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(71, 13);
             this.label11.TabIndex = 2;
@@ -776,7 +777,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Application";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Controle Preventivas CFC v1.0";
+            this.Text = "Mapeamento de Pontos CFC v1.0";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
