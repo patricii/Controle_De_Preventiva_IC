@@ -61,6 +61,8 @@ namespace ControlePreventiva_INLINE_CFC
             try
             {
                 controlePreventivasICBindingSource.AddNew();
+
+                //setting default
                 textBoxUtilizacao.Text = "0%";
                 textBoxAVG.Text = "0";
                 textBoxPFAIL.Text = "0";
@@ -69,6 +71,7 @@ namespace ControlePreventiva_INLINE_CFC
                 textBoxPHANDLE.Text = "0";
                 textBoxWeek.Text = "Week_";
                 textBoxComentario.Text = "NA";
+                dateTimePicker1.Value = DateTime.Now;
 
             }
             catch (Exception ex)

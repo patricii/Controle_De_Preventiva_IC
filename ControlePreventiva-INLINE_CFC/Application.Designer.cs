@@ -231,7 +231,7 @@
             this.salvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salvar.Location = new System.Drawing.Point(115, 19);
             this.salvar.Name = "salvar";
-            this.salvar.Size = new System.Drawing.Size(101, 38);
+            this.salvar.Size = new System.Drawing.Size(67, 38);
             this.salvar.TabIndex = 27;
             this.salvar.Text = "SALVAR";
             this.salvar.UseVisualStyleBackColor = true;
@@ -441,7 +441,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(374, 35);
+            this.label15.Location = new System.Drawing.Point(387, 36);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(535, 37);
             this.label15.TabIndex = 33;
@@ -451,9 +451,9 @@
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Green;
-            this.button2.Location = new System.Drawing.Point(1143, 45);
+            this.button2.Location = new System.Drawing.Point(1168, 12);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(107, 28);
+            this.button2.Size = new System.Drawing.Size(82, 61);
             this.button2.TabIndex = 34;
             this.button2.Text = "Export to Excel";
             this.button2.UseVisualStyleBackColor = true;
@@ -747,9 +747,9 @@
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button3.Location = new System.Drawing.Point(1143, 79);
+            this.button3.Location = new System.Drawing.Point(1168, 79);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(107, 23);
+            this.button3.Size = new System.Drawing.Size(82, 23);
             this.button3.TabIndex = 37;
             this.button3.Text = "Backup DB";
             this.button3.UseVisualStyleBackColor = true;
