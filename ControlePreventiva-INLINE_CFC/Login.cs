@@ -12,7 +12,7 @@ namespace ControlePreventiva_INLINE_CFC
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (user.Text == "fcsuser" && password.Text == "fcsuser")
+            if (user.Text == "manut" && password.Text == "manut2022")
             {
                 this.Hide();
                 Application ff = new Application();

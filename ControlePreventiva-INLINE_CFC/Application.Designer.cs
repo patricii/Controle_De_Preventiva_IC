@@ -439,10 +439,10 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(402, 34);
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(374, 35);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(455, 31);
+            this.label15.Size = new System.Drawing.Size(535, 37);
             this.label15.TabIndex = 33;
             this.label15.Text = "CONTROLE DE PREVENTIVA CFC";
             // 
