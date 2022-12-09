@@ -124,7 +124,6 @@
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.incluir);
             this.groupBox2.Controls.Add(this.textBoxComentario);
-            this.groupBox2.Controls.Add(this.salvar);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.comboBox5);
             this.groupBox2.Controls.Add(this.label8);
@@ -212,7 +211,7 @@
             this.incluir.ForeColor = System.Drawing.Color.Green;
             this.incluir.Location = new System.Drawing.Point(8, 19);
             this.incluir.Name = "incluir";
-            this.incluir.Size = new System.Drawing.Size(83, 44);
+            this.incluir.Size = new System.Drawing.Size(121, 44);
             this.incluir.TabIndex = 28;
             this.incluir.Text = "NOVO REGISTRO";
             this.incluir.UseVisualStyleBackColor = true;
@@ -229,9 +228,9 @@
             // salvar
             // 
             this.salvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.salvar.Location = new System.Drawing.Point(97, 19);
+            this.salvar.Location = new System.Drawing.Point(536, 280);
             this.salvar.Name = "salvar";
-            this.salvar.Size = new System.Drawing.Size(67, 44);
+            this.salvar.Size = new System.Drawing.Size(106, 52);
             this.salvar.TabIndex = 27;
             this.salvar.Text = "SALVAR";
             this.salvar.UseVisualStyleBackColor = true;
@@ -357,17 +356,17 @@
             this.comboBoxType.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlePreventivasICBindingSource, "TipoEstacao", true));
             this.comboBoxType.FormattingEnabled = true;
             this.comboBoxType.Items.AddRange(new object[] {
-            "CFC-PACE01",
-            "CFC-PACE02",
-            "CFC-PACE03",
-            "CFC-PACE04",
-            "CFC-PACE05",
-            "CFC-PACE06",
-            "CFC-PACE07",
-            "CFC-PACE08",
-            "CFC-PACE09",
-            "CFC-PACE10",
-            "CFC-PACE11"});
+            "PACE01",
+            "PACE02",
+            "PACE03",
+            "PACE04",
+            "PACE05",
+            "PACE06",
+            "PACE07",
+            "PACE08",
+            "PACE09",
+            "PACE10",
+            "PACE11"});
             this.comboBoxType.Location = new System.Drawing.Point(8, 82);
             this.comboBoxType.Name = "comboBoxType";
             this.comboBoxType.Size = new System.Drawing.Size(144, 21);
@@ -770,6 +769,7 @@
             this.Controls.Add(this.label14);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.salvar);
             this.Controls.Add(this.deletar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.proximo);

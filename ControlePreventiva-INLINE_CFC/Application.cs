@@ -145,7 +145,7 @@ namespace ControlePreventiva_INLINE_CFC
             try
             {
                 File.Copy(strFilePath, strFileDestination, true);
-                MessageBox.Show("Backup do DataBase criado com sucesso!!!");
+                MessageBox.Show("Backup do DataBase criado com sucesso na folder C:\\temp\\Backup_Controle_Preventiva_IC.mdb!!!");
             }
             catch (IOException ex)
             {
