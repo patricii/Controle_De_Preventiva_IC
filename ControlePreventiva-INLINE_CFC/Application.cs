@@ -55,23 +55,12 @@ namespace ControlePreventiva_INLINE_CFC
                 MessageBox.Show("Não foi possivel conectar com o Banco de Dados! : " + ex);
             }
         }
-
         private void incluir_Click(object sender, EventArgs e) //Add new
         {
             try
             {
                 controlePreventivasICBindingSource.AddNew();
-
-                //setting default
-                textBoxUtilizacao.Text = "0%";
-                textBoxAVG.Text = "0";
-                textBoxPFAIL.Text = "0";
-                textBoxPPASS.Text = "0";
-                textBoxPYIELD.Text = "0%";
-                textBoxPHANDLE.Text = "0";
-                textBoxWeek.Text = "Week_";
-                textBoxComentario.Text = "NA";
-                dateTimePicker1.Value = DateTime.Now;
+                setField();
 
             }
             catch (Exception ex)
@@ -153,6 +142,19 @@ namespace ControlePreventiva_INLINE_CFC
             {
                 MessageBox.Show("Não foi possivel criar um backup do DataBase! : " + ex);
             }
+        }
+        private void setField()
+        {
+            //setting default
+            textBoxUtilizacao.Text = "0%";
+            textBoxAVG.Text = "0";
+            textBoxPFAIL.Text = "0";
+            textBoxPPASS.Text = "0";
+            textBoxPYIELD.Text = "0%";
+            textBoxPHANDLE.Text = "0";
+            textBoxWeek.Text = "Week_";
+            textBoxComentario.Text = "NA";
+            dateTimePicker1.Value = DateTime.Now;
         }
 
     }
