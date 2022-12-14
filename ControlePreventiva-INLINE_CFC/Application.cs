@@ -12,7 +12,8 @@ namespace ControlePreventiva_INLINE_CFC
         {
             InitializeComponent();
         }
-
+        public static string errorDBMessage = "Não foi possivel conectar com o Banco de Dados! : ";
+        public static string saveDBOK = "Registro salvo com sucesso!!!";
         private void Form2_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'controlePreventiva_ICDataSet.ControlePreventivasIC' table. You can move, or remove it, as needed.
@@ -28,7 +29,7 @@ namespace ControlePreventiva_INLINE_CFC
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Não foi possivel conectar com o Banco de Dados! : " + ex);
+                MessageBox.Show(errorDBMessage + ex);
             }
         }
 
@@ -40,7 +41,7 @@ namespace ControlePreventiva_INLINE_CFC
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Não foi possivel conectar com o Banco de Dados! : " + ex);
+                MessageBox.Show(errorDBMessage + ex);
             }
         }
 
@@ -52,7 +53,7 @@ namespace ControlePreventiva_INLINE_CFC
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Não foi possivel conectar com o Banco de Dados! : " + ex);
+                MessageBox.Show(errorDBMessage + ex);
             }
         }
         private void incluir_Click(object sender, EventArgs e) //Add new
@@ -65,7 +66,7 @@ namespace ControlePreventiva_INLINE_CFC
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Não foi possivel conectar com o Banco de Dados! : " + ex);
+                MessageBox.Show(errorDBMessage + ex);
             }
         }
 
@@ -75,11 +76,11 @@ namespace ControlePreventiva_INLINE_CFC
             {
                 controlePreventivasICBindingSource.EndEdit();
                 controlePreventivasICTableAdapter.Update(controlePreventiva_ICDataSet);
-                MessageBox.Show("Registro salvo com sucesso!!!");
+                MessageBox.Show(saveDBOK);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Não foi possivel conectar com o Banco de Dados! : " + ex);
+                MessageBox.Show(errorDBMessage + ex);
             }
         }
 
