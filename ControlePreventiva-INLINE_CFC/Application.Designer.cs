@@ -32,6 +32,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBoxWeek = new System.Windows.Forms.TextBox();
+            this.controlePreventivasICBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.controlePreventiva_ICDataSet = new ControlePreventiva_INLINE_CFC.ControlePreventiva_ICDataSet();
             this.label9 = new System.Windows.Forms.Label();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -39,7 +41,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.incluir = new System.Windows.Forms.Button();
             this.textBoxComentario = new System.Windows.Forms.TextBox();
-            this.salvar = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -53,6 +54,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.comboBoxType = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.salvar = new System.Windows.Forms.Button();
             this.deletar = new System.Windows.Forms.Button();
             this.proximo = new System.Windows.Forms.Button();
             this.anterior = new System.Windows.Forms.Button();
@@ -74,9 +76,6 @@
             this.textBoxUtilizacao = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.controlePreventiva_ICDataSet = new ControlePreventiva_INLINE_CFC.ControlePreventiva_ICDataSet();
-            this.controlePreventivasICBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.controlePreventivasICTableAdapter = new ControlePreventiva_INLINE_CFC.ControlePreventiva_ICDataSetTableAdapters.ControlePreventivasICTableAdapter();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoEstacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeEstacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -94,13 +93,14 @@
             this.pFAILDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pYIELDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.weekDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.controlePreventivasICTableAdapter = new ControlePreventiva_INLINE_CFC.ControlePreventiva_ICDataSetTableAdapters.ControlePreventivasICTableAdapter();
             this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.controlePreventivasICBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.controlePreventiva_ICDataSet)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.controlePreventiva_ICDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.controlePreventivasICBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -153,6 +153,16 @@
             this.textBoxWeek.Size = new System.Drawing.Size(184, 20);
             this.textBoxWeek.TabIndex = 34;
             this.textBoxWeek.Text = "Week_1";
+            // 
+            // controlePreventivasICBindingSource
+            // 
+            this.controlePreventivasICBindingSource.DataMember = "ControlePreventivasIC";
+            this.controlePreventivasICBindingSource.DataSource = this.controlePreventiva_ICDataSet;
+            // 
+            // controlePreventiva_ICDataSet
+            // 
+            this.controlePreventiva_ICDataSet.DataSetName = "ControlePreventiva_ICDataSet";
+            this.controlePreventiva_ICDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label9
             // 
@@ -225,17 +235,6 @@
             this.textBoxComentario.Size = new System.Drawing.Size(687, 20);
             this.textBoxComentario.TabIndex = 23;
             // 
-            // salvar
-            // 
-            this.salvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.salvar.Location = new System.Drawing.Point(536, 280);
-            this.salvar.Name = "salvar";
-            this.salvar.Size = new System.Drawing.Size(106, 52);
-            this.salvar.TabIndex = 27;
-            this.salvar.Text = "SALVAR";
-            this.salvar.UseVisualStyleBackColor = true;
-            this.salvar.Click += new System.EventHandler(this.salvar_Click);
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -294,7 +293,14 @@
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
             "RODRIGO MELO",
-            "JULIO LEAO"});
+            "JULIO LEAO",
+            "JEFERSON BETTIOL",
+            "MARCELO MORETI",
+            "SANDRO COSTA",
+            "VAGNER CAMARGO",
+            "WANDERLEY JUNIOR",
+            "WILLIAM LOPES",
+            "KAUE PINTO"});
             this.comboBox3.Location = new System.Drawing.Point(441, 82);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(166, 21);
@@ -381,6 +387,17 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "CFC";
             // 
+            // salvar
+            // 
+            this.salvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salvar.Location = new System.Drawing.Point(536, 280);
+            this.salvar.Name = "salvar";
+            this.salvar.Size = new System.Drawing.Size(106, 52);
+            this.salvar.TabIndex = 27;
+            this.salvar.Text = "SALVAR";
+            this.salvar.UseVisualStyleBackColor = true;
+            this.salvar.Click += new System.EventHandler(this.salvar_Click);
+            // 
             // deletar
             // 
             this.deletar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -460,6 +477,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.groupBox1.Controls.Add(this.textBoxPYIELD);
             this.groupBox1.Controls.Add(this.label18);
             this.groupBox1.Controls.Add(this.textBoxPFAIL);
@@ -616,20 +634,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(1237, 407);
             this.dataGridView1.TabIndex = 36;
             // 
-            // controlePreventiva_ICDataSet
-            // 
-            this.controlePreventiva_ICDataSet.DataSetName = "ControlePreventiva_ICDataSet";
-            this.controlePreventiva_ICDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // controlePreventivasICBindingSource
-            // 
-            this.controlePreventivasICBindingSource.DataMember = "ControlePreventivasIC";
-            this.controlePreventivasICBindingSource.DataSource = this.controlePreventiva_ICDataSet;
-            // 
-            // controlePreventivasICTableAdapter
-            // 
-            this.controlePreventivasICTableAdapter.ClearBeforeFill = true;
-            // 
             // iDDataGridViewTextBoxColumn
             // 
             this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
@@ -743,6 +747,10 @@
             this.weekDataGridViewTextBoxColumn.Name = "weekDataGridViewTextBoxColumn";
             this.weekDataGridViewTextBoxColumn.Width = 70;
             // 
+            // controlePreventivasICTableAdapter
+            // 
+            this.controlePreventivasICTableAdapter.ClearBeforeFill = true;
+            // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -782,11 +790,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.controlePreventivasICBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.controlePreventiva_ICDataSet)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.controlePreventiva_ICDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.controlePreventivasICBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

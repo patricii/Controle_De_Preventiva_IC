@@ -26,4 +26,3 @@ C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_
 C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\bin\Debug\MapeamentoPerformanceCFC.pdb
 C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\obj\Debug\MapeamentoPerformanceCFC.exe
 C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\obj\Debug\MapeamentoPerformanceCFC.pdb
-C:\DEVELOPMENT PROJECTS\ControlePreventiva-INLINE_CFC\ControlePreventiva-INLINE_CFC\obj\Debug\ControlePreventiva-INLINE_CFC.csprojResolveAssemblyReference.cache

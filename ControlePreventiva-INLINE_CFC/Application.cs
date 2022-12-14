@@ -104,7 +104,8 @@ namespace ControlePreventiva_INLINE_CFC
             try
             {
                 OleDbConnection conn = new OleDbConnection();
-                conn.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=V:\Tools\Controle_Preventiva_IC\ControlePreventiva_IC.mdb; User Id=admin;Password=";
+                conn.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=\\jagnt092\transfer\MAPEAMENTO_DE_PONTOS_CFC\ControlePreventiva_IC.mdb; User Id=admin;Password=";
+                //conn.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=V:\Tools\Controle_Preventiva_IC\ControlePreventiva_IC.mdb; User Id=admin;Password=";
                 string query = "SELECT * FROM ControlePreventivasIC";
                 string separator = ",";
                 string strFilePath = @"C:\temp\Controle_Preventiva_IC_export.csv";
@@ -139,7 +140,7 @@ namespace ControlePreventiva_INLINE_CFC
 
         private void button3_Click(object sender, EventArgs e) //DB backup
         {
-            string strFilePath = @"V:\Tools\Controle_Preventiva_IC\ControlePreventiva_IC.mdb";
+            string strFilePath = @"\\jagnt092\transfer\MAPEAMENTO_DE_PONTOS_CFC\ControlePreventiva_IC.mdb";
             string strFileDestination = @"C:\temp\Backup_Controle_Preventiva_IC.mdb";
 
             try
