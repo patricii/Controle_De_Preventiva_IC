@@ -75,6 +75,9 @@
             this.label10 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button3 = new System.Windows.Forms.Button();
+            this.controlePreventivasICBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.controlePreventiva_ICDataSet = new ControlePreventiva_INLINE_CFC.ControlePreventiva_ICDataSet();
+            this.controlePreventivasICTableAdapter = new ControlePreventiva_INLINE_CFC.ControlePreventiva_ICDataSetTableAdapters.ControlePreventivasICTableAdapter();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoEstacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeEstacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -92,9 +95,6 @@
             this.pFAILDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pYIELDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.weekDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.controlePreventivasICBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.controlePreventiva_ICDataSet = new ControlePreventiva_INLINE_CFC.ControlePreventiva_ICDataSet();
-            this.controlePreventivasICTableAdapter = new ControlePreventiva_INLINE_CFC.ControlePreventiva_ICDataSetTableAdapters.ControlePreventivasICTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -636,6 +636,20 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // controlePreventivasICBindingSource
+            // 
+            this.controlePreventivasICBindingSource.DataMember = "ControlePreventivasIC";
+            this.controlePreventivasICBindingSource.DataSource = this.controlePreventiva_ICDataSet;
+            // 
+            // controlePreventiva_ICDataSet
+            // 
+            this.controlePreventiva_ICDataSet.DataSetName = "ControlePreventiva_ICDataSet";
+            this.controlePreventiva_ICDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // controlePreventivasICTableAdapter
+            // 
+            this.controlePreventivasICTableAdapter.ClearBeforeFill = true;
+            // 
             // iDDataGridViewTextBoxColumn
             // 
             this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
@@ -646,14 +660,14 @@
             // tipoEstacaoDataGridViewTextBoxColumn
             // 
             this.tipoEstacaoDataGridViewTextBoxColumn.DataPropertyName = "TipoEstacao";
-            this.tipoEstacaoDataGridViewTextBoxColumn.HeaderText = "Estação";
+            this.tipoEstacaoDataGridViewTextBoxColumn.HeaderText = "CFC";
             this.tipoEstacaoDataGridViewTextBoxColumn.Name = "tipoEstacaoDataGridViewTextBoxColumn";
             this.tipoEstacaoDataGridViewTextBoxColumn.Width = 50;
             // 
             // nomeEstacaoDataGridViewTextBoxColumn
             // 
             this.nomeEstacaoDataGridViewTextBoxColumn.DataPropertyName = "NomeEstacao";
-            this.nomeEstacaoDataGridViewTextBoxColumn.HeaderText = "Ponto";
+            this.nomeEstacaoDataGridViewTextBoxColumn.HeaderText = "Estação / Ponto";
             this.nomeEstacaoDataGridViewTextBoxColumn.Name = "nomeEstacaoDataGridViewTextBoxColumn";
             this.nomeEstacaoDataGridViewTextBoxColumn.Width = 120;
             // 
@@ -749,20 +763,6 @@
             this.weekDataGridViewTextBoxColumn.Name = "weekDataGridViewTextBoxColumn";
             this.weekDataGridViewTextBoxColumn.Width = 70;
             // 
-            // controlePreventivasICBindingSource
-            // 
-            this.controlePreventivasICBindingSource.DataMember = "ControlePreventivasIC";
-            this.controlePreventivasICBindingSource.DataSource = this.controlePreventiva_ICDataSet;
-            // 
-            // controlePreventiva_ICDataSet
-            // 
-            this.controlePreventiva_ICDataSet.DataSetName = "ControlePreventiva_ICDataSet";
-            this.controlePreventiva_ICDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // controlePreventivasICTableAdapter
-            // 
-            this.controlePreventivasICTableAdapter.ClearBeforeFill = true;
-            // 
             // Application
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -849,6 +849,7 @@
         private ControlePreventiva_ICDataSet controlePreventiva_ICDataSet;
         private System.Windows.Forms.BindingSource controlePreventivasICBindingSource;
         private ControlePreventiva_ICDataSetTableAdapters.ControlePreventivasICTableAdapter controlePreventivasICTableAdapter;
+        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tipoEstacaoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeEstacaoDataGridViewTextBoxColumn;
@@ -866,6 +867,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn pFAILDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pYIELDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn weekDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button button3;
     }
 }

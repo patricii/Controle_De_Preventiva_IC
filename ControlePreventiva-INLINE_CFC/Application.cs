@@ -91,14 +91,14 @@ namespace ControlePreventiva_INLINE_CFC
 
         private void button2_Click_1(object sender, EventArgs e) //csv export
         {
+            OleDbConnection conn = new OleDbConnection();
+            conn.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=\\jagnt092\transfer\MAPEAMENTO_DE_PONTOS_CFC\ControlePreventiva_IC.mdb; User Id=admin;Password=";
+            //conn.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=V:\Tools\Controle_Preventiva_IC\ControlePreventiva_IC.mdb; User Id=admin;Password=";
+            string query = "SELECT * FROM ControlePreventivasIC";
+            string separator = ",";
+            string strFilePath = @"C:\temp\Controle_Preventiva_IC_export.csv";
             try
             {
-                OleDbConnection conn = new OleDbConnection();
-                conn.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=\\jagnt092\transfer\MAPEAMENTO_DE_PONTOS_CFC\ControlePreventiva_IC.mdb; User Id=admin;Password=";
-                //conn.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=V:\Tools\Controle_Preventiva_IC\ControlePreventiva_IC.mdb; User Id=admin;Password=";
-                string query = "SELECT * FROM ControlePreventivasIC";
-                string separator = ",";
-                string strFilePath = @"C:\temp\Controle_Preventiva_IC_export.csv";
 
                 using (StreamWriter sw = new StreamWriter(strFilePath))
                 using (OleDbCommand Cmd = new OleDbCommand(query, conn))
@@ -124,6 +124,10 @@ namespace ControlePreventiva_INLINE_CFC
             {
 
                 MessageBox.Show("Não foi possivel exportar os dados para o excel!!!! : " + ex);
+            }
+            finally
+            {
+                conn.Close();
             }
 
         }
