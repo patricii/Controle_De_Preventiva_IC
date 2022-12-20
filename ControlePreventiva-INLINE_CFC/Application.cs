@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Data.OleDb;
 using System.IO;
 using System.Text;
@@ -127,6 +128,7 @@ namespace ControlePreventiva_INLINE_CFC
             }
             finally
             {
+                if(conn.State == ConnectionState.Open)
                 conn.Close();
             }
 
