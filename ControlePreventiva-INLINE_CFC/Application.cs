@@ -15,6 +15,7 @@ namespace ControlePreventiva_INLINE_CFC
         }
         public static string errorDBMessage = "Não foi possivel conectar com o Banco de Dados! : ";
         public static string saveDBOK = "Registro salvo com sucesso!!!";
+        public static string connectionDb = @"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=\\jagnt092\transfer\MAPEAMENTO_DE_PONTOS_CFC\ControlePreventiva_IC.mdb; User Id=admin;Password=";
         private void Form2_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'controlePreventiva_ICDataSet.ControlePreventivasIC' table. You can move, or remove it, as needed.
@@ -93,7 +94,7 @@ namespace ControlePreventiva_INLINE_CFC
         private void button2_Click_1(object sender, EventArgs e) //csv export
         {
             OleDbConnection conn = new OleDbConnection();
-            conn.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=\\jagnt092\transfer\MAPEAMENTO_DE_PONTOS_CFC\ControlePreventiva_IC.mdb; User Id=admin;Password=";
+            conn.ConnectionString = connectionDb;
             //conn.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=V:\Tools\Controle_Preventiva_IC\ControlePreventiva_IC.mdb; User Id=admin;Password=";
             string query = "SELECT * FROM ControlePreventivasIC";
             string separator = ",";
@@ -133,6 +134,7 @@ namespace ControlePreventiva_INLINE_CFC
             }
 
         }
+
 
         private void button3_Click(object sender, EventArgs e) //DB backup
         {
