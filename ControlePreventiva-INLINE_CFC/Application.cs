@@ -15,14 +15,11 @@ namespace ControlePreventiva_INLINE_CFC
         }
         public static string errorDBMessage = "Não foi possivel conectar com o Banco de Dados! : ";
         public static string saveDBOK = "Registro salvo com sucesso!!!";
-        public static string connectionDb = @"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=\\jagnt092\transfer\MAPEAMENTO_DE_PONTOS_CFC\ControlePreventiva_IC.mdb; User Id=admin;Password=";
+        public static string connectionDb = Properties.Settings.Default.ControlePreventiva_ICConnectionString;
         private void Form2_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'controlePreventiva_ICDataSet.ControlePreventivasIC' table. You can move, or remove it, as needed.
             this.controlePreventivasICTableAdapter.Fill(this.controlePreventiva_ICDataSet.ControlePreventivasIC);
-
         }
-
         private void button1_Click(object sender, EventArgs e) //move previous
         {
             try
@@ -34,7 +31,6 @@ namespace ControlePreventiva_INLINE_CFC
                 MessageBox.Show(errorDBMessage + ex);
             }
         }
-
         private void button2_Click(object sender, EventArgs e) //move Next
         {
             try
@@ -46,7 +42,6 @@ namespace ControlePreventiva_INLINE_CFC
                 MessageBox.Show(errorDBMessage + ex);
             }
         }
-
         private void deletar_Click(object sender, EventArgs e) //Delete
         {
             try
@@ -64,14 +59,12 @@ namespace ControlePreventiva_INLINE_CFC
             {
                 controlePreventivasICBindingSource.AddNew();
                 setField();
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show(errorDBMessage + ex);
             }
         }
-
         private void salvar_Click(object sender, EventArgs e) //Save
         {
             try
@@ -85,17 +78,14 @@ namespace ControlePreventiva_INLINE_CFC
                 MessageBox.Show(errorDBMessage + ex);
             }
         }
-
         private void button1_Click_1(object sender, EventArgs e) //exit
         {
             Environment.Exit(0);
         }
-
         private void button2_Click_1(object sender, EventArgs e) //csv export
         {
             OleDbConnection conn = new OleDbConnection();
             conn.ConnectionString = connectionDb;
-            //conn.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=V:\Tools\Controle_Preventiva_IC\ControlePreventiva_IC.mdb; User Id=admin;Password=";
             string query = "SELECT * FROM ControlePreventivasIC";
             string separator = ",";
             string strFilePath = @"C:\temp\Controle_Preventiva_IC_export.csv";
@@ -134,12 +124,9 @@ namespace ControlePreventiva_INLINE_CFC
             }
 
         }
-
-
         private void button3_Click(object sender, EventArgs e) //DB backup
         {
             string strFilePath = @"\\jagnt092\transfer\MAPEAMENTO_DE_PONTOS_CFC\ControlePreventiva_IC.mdb";
-            //string strFilePath = @"V:\Tools\Controle_Preventiva_IC\ControlePreventiva_IC.mdb";
             string strFileDestination = @"C:\temp\Backup_Controle_Preventiva_IC.mdb";
 
             try
