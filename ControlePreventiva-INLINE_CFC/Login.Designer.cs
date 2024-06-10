@@ -32,7 +32,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.user = new System.Windows.Forms.TextBox();
             this.password = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonLogin = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -70,15 +70,15 @@
             this.password.TabIndex = 4;
             this.password.UseSystemPasswordChar = true;
             // 
-            // button1
+            // buttonLogin
             // 
-            this.button1.Location = new System.Drawing.Point(245, 147);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(51, 39);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Logar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonLogin.Location = new System.Drawing.Point(245, 147);
+            this.buttonLogin.Name = "buttonLogin";
+            this.buttonLogin.Size = new System.Drawing.Size(51, 39);
+            this.buttonLogin.TabIndex = 5;
+            this.buttonLogin.Text = "Logar";
+            this.buttonLogin.UseVisualStyleBackColor = true;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // pictureBox1
             // 
@@ -95,7 +95,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(317, 219);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.password);
             this.Controls.Add(this.user);
             this.Controls.Add(this.label2);
@@ -118,7 +118,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox user;
         private System.Windows.Forms.TextBox password;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonLogin;
     }
 }
 

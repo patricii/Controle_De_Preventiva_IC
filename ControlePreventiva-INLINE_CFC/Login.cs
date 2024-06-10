@@ -10,18 +10,19 @@ namespace ControlePreventiva_INLINE_CFC
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonLogin_Click(object sender, EventArgs e)
         {
-            if (user.Text == "manut" && password.Text == "manut2022")
+            int year = DateTime.Now.Year;
+            if (user.Text == "manut" && password.Text == "manut" + year.ToString())
             {
-                this.Hide();
+                Hide();
                 Application ff = new Application();
                 ff.Show();
 
             }
             else
             {
-                MessageBox.Show("Senha ou usuário incorretos!!!!");
+                MessageBox.Show("Usuário ou senha incorretos!!!!");
                 user.Text = "";
                 password.Text = "";
             }

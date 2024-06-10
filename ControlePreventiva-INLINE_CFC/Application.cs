@@ -28,7 +28,7 @@ namespace ControlePreventiva_INLINE_CFC
             }
             catch (Exception ex)
             {
-                MessageBox.Show(errorDBMessage + ex);
+                MessageBox.Show(errorDBMessage + ex.Message);
             }
         }
         private void button2_Click(object sender, EventArgs e) //move Next
@@ -39,7 +39,7 @@ namespace ControlePreventiva_INLINE_CFC
             }
             catch (Exception ex)
             {
-                MessageBox.Show(errorDBMessage + ex);
+                MessageBox.Show(errorDBMessage + ex.Message);
             }
         }
         private void deletar_Click(object sender, EventArgs e) //Delete
@@ -50,7 +50,7 @@ namespace ControlePreventiva_INLINE_CFC
             }
             catch (Exception ex)
             {
-                MessageBox.Show(errorDBMessage + ex);
+                MessageBox.Show(errorDBMessage + ex.Message);
             }
         }
         private void incluir_Click(object sender, EventArgs e) //Add new
@@ -62,7 +62,7 @@ namespace ControlePreventiva_INLINE_CFC
             }
             catch (Exception ex)
             {
-                MessageBox.Show(errorDBMessage + ex);
+                MessageBox.Show(errorDBMessage + ex.Message);
             }
         }
         private void salvar_Click(object sender, EventArgs e) //Save
@@ -75,7 +75,7 @@ namespace ControlePreventiva_INLINE_CFC
             }
             catch (Exception ex)
             {
-                MessageBox.Show(errorDBMessage + ex);
+                MessageBox.Show(errorDBMessage + ex.Message);
             }
         }
         private void button1_Click_1(object sender, EventArgs e) //exit
@@ -115,7 +115,7 @@ namespace ControlePreventiva_INLINE_CFC
             catch (Exception ex)
             {
 
-                MessageBox.Show("Não foi possivel exportar os dados para o excel!!!! : " + ex);
+                MessageBox.Show("Não foi possivel exportar os dados para o excel!!!! : " + ex.Message);
             }
             finally
             {
@@ -136,7 +136,7 @@ namespace ControlePreventiva_INLINE_CFC
             }
             catch (IOException ex)
             {
-                MessageBox.Show("Não foi possivel criar um backup do DataBase! : " + ex);
+                MessageBox.Show("Não foi possivel criar um backup do DataBase! : " + ex.Message);
             }
         }
         private void setField()
