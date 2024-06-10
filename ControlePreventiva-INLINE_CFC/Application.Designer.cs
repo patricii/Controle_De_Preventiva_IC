@@ -58,10 +58,10 @@
             this.deletar = new System.Windows.Forms.Button();
             this.proximo = new System.Windows.Forms.Button();
             this.anterior = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonExit = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonExportCsv = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBoxPYIELD = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -93,7 +93,7 @@
             this.pFAILDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pYIELDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.weekDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttonBkp = new System.Windows.Forms.Button();
             this.controlePreventivasICTableAdapter = new ControlePreventiva_INLINE_CFC.ControlePreventiva_ICDataSetTableAdapters.ControlePreventivasICTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -421,7 +421,7 @@
             this.proximo.TabIndex = 25;
             this.proximo.Text = ">>";
             this.proximo.UseVisualStyleBackColor = true;
-            this.proximo.Click += new System.EventHandler(this.button2_Click);
+            this.proximo.Click += new System.EventHandler(this.proximo_Click);
             // 
             // anterior
             // 
@@ -432,18 +432,18 @@
             this.anterior.TabIndex = 24;
             this.anterior.Text = "<<";
             this.anterior.UseVisualStyleBackColor = true;
-            this.anterior.Click += new System.EventHandler(this.button1_Click);
+            this.anterior.Click += new System.EventHandler(this.anterior_Click);
             // 
-            // button1
+            // buttonExit
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1195, 789);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(55, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Sair";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExit.Location = new System.Drawing.Point(1195, 789);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(55, 23);
+            this.buttonExit.TabIndex = 5;
+            this.buttonExit.Text = "Sair";
+            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // label14
             // 
@@ -465,17 +465,17 @@
             this.label15.TabIndex = 33;
             this.label15.Text = "MAPEAMENTO DE PONTOS CFC";
             // 
-            // button2
+            // buttonExportCsv
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Green;
-            this.button2.Location = new System.Drawing.Point(1168, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(82, 61);
-            this.button2.TabIndex = 34;
-            this.button2.Text = "Export to Excel";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.buttonExportCsv.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExportCsv.ForeColor = System.Drawing.Color.Green;
+            this.buttonExportCsv.Location = new System.Drawing.Point(1168, 12);
+            this.buttonExportCsv.Name = "buttonExportCsv";
+            this.buttonExportCsv.Size = new System.Drawing.Size(82, 61);
+            this.buttonExportCsv.TabIndex = 34;
+            this.buttonExportCsv.Text = "Export to Excel";
+            this.buttonExportCsv.UseVisualStyleBackColor = true;
+            this.buttonExportCsv.Click += new System.EventHandler(this.buttonExportCsv_Click);
             // 
             // groupBox1
             // 
@@ -749,17 +749,17 @@
             this.weekDataGridViewTextBoxColumn.Name = "weekDataGridViewTextBoxColumn";
             this.weekDataGridViewTextBoxColumn.Width = 70;
             // 
-            // button3
+            // buttonBkp
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button3.Location = new System.Drawing.Point(1168, 79);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(82, 23);
-            this.button3.TabIndex = 37;
-            this.button3.Text = "Backup DB";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.buttonBkp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBkp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.buttonBkp.Location = new System.Drawing.Point(1168, 79);
+            this.buttonBkp.Name = "buttonBkp";
+            this.buttonBkp.Size = new System.Drawing.Size(82, 23);
+            this.buttonBkp.TabIndex = 37;
+            this.buttonBkp.Text = "Backup DB";
+            this.buttonBkp.UseVisualStyleBackColor = true;
+            this.buttonBkp.Click += new System.EventHandler(this.buttonBkp_Click);
             // 
             // controlePreventivasICTableAdapter
             // 
@@ -771,13 +771,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(1262, 813);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.buttonBkp);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonExportCsv);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.salvar);
             this.Controls.Add(this.deletar);
@@ -824,10 +824,10 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonExportCsv;
         private System.Windows.Forms.TextBox textBoxWeek;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox comboBox6;
@@ -851,7 +851,7 @@
         private ControlePreventiva_ICDataSet controlePreventiva_ICDataSet;
         private System.Windows.Forms.BindingSource controlePreventivasICBindingSource;
         private ControlePreventiva_ICDataSetTableAdapters.ControlePreventivasICTableAdapter controlePreventivasICTableAdapter;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonBkp;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tipoEstacaoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeEstacaoDataGridViewTextBoxColumn;

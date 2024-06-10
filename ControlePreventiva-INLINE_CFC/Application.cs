@@ -20,22 +20,22 @@ namespace ControlePreventiva_INLINE_CFC
         {
             this.controlePreventivasICTableAdapter.Fill(this.controlePreventiva_ICDataSet.ControlePreventivasIC);
         }
-        private void button1_Click(object sender, EventArgs e) //move previous
+        private void proximo_Click(object sender, EventArgs e)  // move next
         {
             try
             {
-                controlePreventivasICBindingSource.MovePrevious();
+                controlePreventivasICBindingSource.MoveNext();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(errorDBMessage + ex.Message);
             }
         }
-        private void button2_Click(object sender, EventArgs e) //move Next
+        private void anterior_Click(object sender, EventArgs e) // move previous
         {
             try
             {
-                controlePreventivasICBindingSource.MoveNext();
+                controlePreventivasICBindingSource.MovePrevious();
             }
             catch (Exception ex)
             {
@@ -77,12 +77,43 @@ namespace ControlePreventiva_INLINE_CFC
             {
                 MessageBox.Show(errorDBMessage + ex.Message);
             }
+        } 
+        private void setField()
+        {
+            //setting default
+            textBoxUtilizacao.Text = "0%";
+            textBoxAVG.Text = "0";
+            textBoxPFAIL.Text = "0";
+            textBoxPPASS.Text = "0";
+            textBoxPYIELD.Text = "0%";
+            textBoxPHANDLE.Text = "0";
+            textBoxWeek.Text = "Week_";
+            textBoxComentario.Text = "NA";
+            dateTimePicker1.Value = DateTime.Now;
         }
-        private void button1_Click_1(object sender, EventArgs e) //exit
+
+        private void buttonExit_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
         }
-        private void button2_Click_1(object sender, EventArgs e) //csv export
+
+        private void buttonBkp_Click(object sender, EventArgs e)
+        {
+            string strFilePath = @"\\jagnt092\transfer\MAPEAMENTO_DE_PONTOS_CFC\ControlePreventiva_IC.mdb";
+            string strFileDestination = @"C:\temp\Backup_Controle_Preventiva_IC.mdb";
+
+            try
+            {
+                File.Copy(strFilePath, strFileDestination, true);
+                MessageBox.Show("Backup do DataBase criado com sucesso na folder C:\\temp\\Backup_Controle_Preventiva_IC.mdb!!!");
+            }
+            catch (IOException ex)
+            {
+                MessageBox.Show("Não foi possivel criar um backup do DataBase! : " + ex.Message);
+            }
+        }
+
+        private void buttonExportCsv_Click(object sender, EventArgs e)
         {
             OleDbConnection conn = new OleDbConnection();
             conn.ConnectionString = connectionDb;
@@ -119,39 +150,9 @@ namespace ControlePreventiva_INLINE_CFC
             }
             finally
             {
-                if(conn.State == ConnectionState.Open)
-                conn.Close();
-            }
-
-        }
-        private void button3_Click(object sender, EventArgs e) //DB backup
-        {
-            string strFilePath = @"\\jagnt092\transfer\MAPEAMENTO_DE_PONTOS_CFC\ControlePreventiva_IC.mdb";
-            string strFileDestination = @"C:\temp\Backup_Controle_Preventiva_IC.mdb";
-
-            try
-            {
-                File.Copy(strFilePath, strFileDestination, true);
-                MessageBox.Show("Backup do DataBase criado com sucesso na folder C:\\temp\\Backup_Controle_Preventiva_IC.mdb!!!");
-            }
-            catch (IOException ex)
-            {
-                MessageBox.Show("Não foi possivel criar um backup do DataBase! : " + ex.Message);
+                if (conn.State == ConnectionState.Open)
+                    conn.Close();
             }
         }
-        private void setField()
-        {
-            //setting default
-            textBoxUtilizacao.Text = "0%";
-            textBoxAVG.Text = "0";
-            textBoxPFAIL.Text = "0";
-            textBoxPPASS.Text = "0";
-            textBoxPYIELD.Text = "0%";
-            textBoxPHANDLE.Text = "0";
-            textBoxWeek.Text = "Week_";
-            textBoxComentario.Text = "NA";
-            dateTimePicker1.Value = DateTime.Now;
-        }
-
     }
 }
